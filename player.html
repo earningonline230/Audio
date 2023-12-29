@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="AudioPlayer" content="Listen music on AudioPlayer">
+    <meta name="MusicPlayer" content="Audio, AudioPlayer, listen Free Music, Open AudioPlayer">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/Sileder.css">
+
+    <title>AudioPlayer</title>
+</head>
+
+<body>
+
+    <!-- this section define left Slider -->
+    <span id="SlideButton" onclick="openNav()">&#9776; </span>
+    <div id="Sidenav" class="sidenav store">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+
+    </div>
+
+    <div id="BodyImage"></div>
+    <section id="AudioPlayer">
+        <!-- this section define audio image -->
+        <div class="AudioImageArea">
+            <div class="AboutAudio">
+                <img class="AudioPlayerImage" src="">
+            </div>
+            <!--define section for diplay audio volume  -->
+            <div class="VolumeVoiceArea">
+                <i class="fa fa-volume-down FontProperty volume"></i>
+                <input type="range" min="1" max="100" value="10" class="VolumeVoice">
+            </div>
+        </div>
+        <!-- the section define displaying  audio name and singer-->
+
+        <p class="AudioName name"></p>
+        <p class="AudioSingerName name"></p>
+
+
+        <!-- the section define displaying  audio-->
+        <div class="AudioPlayerButtonsContainer">
+            <div class="AudioPlayerButtons">
+                <div class="CoosheSituaionAudio">
+                    <span class="FontProperty RepeatAudio">
+                        <i class="fas fa-retweet"></i>
+                    </span>
+                    <span class="FontProperty LikeAudio">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    <span class="FontProperty RandomAudio">
+                        <i class="fas fa-random"></i>
+                    </span>
+                </div>
+
+                <!--define section for diplay the lengt seek -->
+                <div class="AudioLengthSeek">
+                    <span class="CurrentTime FontProperty">00:00</span>
+                    <input type="range" min="1" max="100" class="SeekLength">
+                    <span class="TotalDuration FontProperty">00:00</span>
+                </div>
+
+                <!-- the section define displaying  audio-->
+                <div class="BackNextPauseButtons">
+                    <span class="BackAudioPlayer FontProperty BlackActive">
+                        <i class="fas fa-fast-backward"></i>
+                    </span>
+                    <span class="PauseAudioPlayer FontProperty BlackActive">
+                        <i class="fas fa-stop-circle"></i>
+                    </span>
+                    <span class="NextAudioPlayer FontProperty BlackActive">
+                        <i class="fas fa-fast-forward"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+    <script src="like.js"></script>
+
+
+</body>
+
+</html>

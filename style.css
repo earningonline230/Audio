@@ -1,0 +1,161 @@
+@import url(c:\Users\TexnoUSTA\Desktop\AudioPlayerS\Style\Sileder.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#BodyImage {
+  width: 100%;
+  min-height: 65.5rem;
+  max-height: 95.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://www.brandmusiq.com/wp-content/uploads/2017/11/2-825x390.jpg);
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+}
+
+#AudioPlayer {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  width: 100%;
+  margin: auto;
+}
+
+.VolumeVoiceArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 110%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: relative;
+  bottom: 17%;
+}
+
+.AudioImageArea {
+  width: 22%;
+  margin: auto;
+  height: 21rem;
+}
+
+.AudioPlayerImage {
+  width: 100%;
+  height: 30rem;
+  border-radius: 4%;
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem;
+  background-color: transparent;
+  color: white;
+}
+
+.AudioPlayerButtonsContainer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(182, 182, 185, 0.329)), to(black));
+  background-image: linear-gradient(rgba(182, 182, 185, 0.329), black);
+  -webkit-box-shadow: 10px 10px 20px 10px rgba(160, 160, 160, 0.329);
+          box-shadow: 10px 10px 20px 10px rgba(160, 160, 160, 0.329);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.AudioPlayerButtons {
+  width: 30%;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.CoosheSituaionAudio, .AudioLengthSeek, .BackNextPauseButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.PauseAudioPlayer, .LikeAudio {
+  font-size: 4.5rem !important;
+}
+
+.FontProperty {
+  font-size: 3rem;
+  color: #f0f0f0;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+  padding: 1rem;
+  border-radius: 45%;
+  font-weight: 700;
+}
+
+.FontProperty:hover {
+  background-color: rgba(206, 206, 206, 0.233);
+}
+
+.BlackActive:active {
+  color: black;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+}
+
+.LikeAudio:active {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  color: #ff1c1c;
+  z-index: 2;
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 7px;
+  }
+  #BodyImage {
+    height: 80rem;
+  }
+  #AudioPlayer {
+    top: 15%;
+  }
+  .AudioImageArea {
+    width: 60%;
+  }
+  .AudioPlayerImage {
+    height: 37rem;
+  }
+  .FontProperty {
+    font-size: 2.5rem;
+  }
+  .AudioPlayerButtons {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 576px) {
+  html {
+    font-size: 9px;
+  }
+  .AudioImageArea {
+    width: 30%;
+  }
+  .AudioPlayerButtons {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
